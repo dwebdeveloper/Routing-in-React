@@ -11,6 +11,7 @@ import Clock from "./components/clock/Clock";
 import Contact from "./components/contact/Contact";
 import Navigation from "./components/navigation/Navigation";
 import Page404 from "./components/page404/Page404";
+import Jeopardy from "./components/jeopardy";
 
 function App() {
   return (
@@ -45,6 +46,12 @@ function App() {
             exact
             path="/contact"
             component={Contact}
+          />
+
+          <Route
+            exact
+            path="/jeopardy"
+            component={Jeopardy}
           />
 
           <Route
